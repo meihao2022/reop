@@ -1,25 +1,27 @@
 {
-  "name": "glitch-mvp-node",
-  "version": "0.1.0",
-  "description": "A simple Node app built on fastify, instantly up and running.",
+  "name": "express-hello-world",
+  "version": "1.0.0",
+  "description": "Expressjs Hello World example to provide faster start deploying on Cyclic platform",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "http-proxy-middleware": "^2.0.6",
-    "request": "^2.88.2"
-  },
-  "engines": {
-    "node": "14.x"
+    "serve": "nodemon --watch . server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-mvp-node"
+    "type": "git",
+    "url": "git+https://github.com/cyclic-software/express-hello-world.git"
   },
+  "author": "Cyclic Software",
   "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch"
-  ]
+  "bugs": {
+    "url": "https://github.com/cyclic-software/express-hello-world/issues"
+  },
+  "homepage": "https://github.com/cyclic-software/express-hello-world#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
